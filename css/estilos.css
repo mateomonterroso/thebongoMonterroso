@@ -4,7 +4,9 @@
 }
 
 .bg-nav{
-    background-image: linear-gradient(to right, #b41d23, black);
+   
+    background-color: #b41d23;
+    
 }
 
 .titulo{
