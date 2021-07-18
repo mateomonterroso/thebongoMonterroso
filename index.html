@@ -10,110 +10,235 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png">
     <title>The Bongo</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="description"
+        content="Tu mejor página de resúmenes de películas. En The Bongo vas a encontrar tus películas favoritas resumidas 
+        en unos pocos minutos y siempre con un poco de humor.">
+    <meta name="keywords" content="peliculas, resumen de peliculas, peliculas resumidas, movies, peliculas de terror, peliculas de accion, peliculas buenas para ver">
 </head>
 
 <body>
-    <div class="contenedor">
-        <div class="header">
-            <div class="logo">
-                <img class="fotologo" src="./multimedia/bongo png.png" alt="">
-                <h1 class="animate__animated animate__fadeInDown" class="titulo">THE BONGO </h1>
-            </div>
-            <div class="navegador">
-                <ul>
-                    <li><a class="activo" href="./index.html">INICIO</a></li>
-                    <li><a href="./paginas/videos.html">VIDEOS</a></li>
-                    <li><a href="./paginas/peliculas.html">FUTURO</a></li>
-                    <li><a href="./paginas/historial.html">HISTORIAL</a></li>
-                    <li><a href="./paginas/contacto.html">CONTACTO</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light header">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand text-xl-left">
+                <span class="mb-0 h1 titulo">
+                    <img src="./multimedia/bongo png.png" class="align-top" alt="" width="50">
+                    THE BONGO</span>
+            </a>
+            <button style="color: white !important;" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-white" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> Géneros
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Terror</a>
+                            <a class="dropdown-item" href="#">Acción</a>
+                            <a class="dropdown-item" href="#">Thriller</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./paginas/videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./paginas/peliculas.html">Futuro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./paginas/historial.html">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./paginas/contacto.html">Contacto</a>
+                    </li>
+
                 </ul>
             </div>
         </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="./multimedia/MIDSOMMAR miniatura.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">MIDSOMMAR</h5>
+                        <p class="card-text">Dani tras una pérdida importante decide viajar con su novio y sus amigos a
+                            Suecia, a una comuna
+                            que
+                            vive
+                            en
+                            la naturaleza
+                            donde la festividad parece ser cotidiana pero la historia toma un giro macabro cuando ellos
+                            son
+                            invitados a
+                            participar
+                            en estas actividades.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mb-1">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="./multimedia/THE INVITATION miniatura.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">LA INVITACIÓN</h5>
+                        <p class="card-text">Will es invitado a una fiesta de su ex-esposa Eden la cual no ve hace mas
+                            de dos años debido a
+                            que estuvo de viaje por el mundo pero ahora tiene un nuevo marido y al parecer algo cambió
+                            en
+                            ella... es
+                            una persona diferente.</p>
 
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mb-1">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="./multimedia/NIGHTCRAWLER miniatura.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">NIGHTCRAWLER</h5>
+                        <p class="card-text">Louis Bloom es un joven de Los Ángeles, sin empleo ni escrúpulos, quien,
+                            después de haber sido
+                            testigo
+                            de un accidente espeluznante, decide que quiere ganar fama y fortuna a través del periodismo
+                            sensacionalista.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mb-1">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="./multimedia/THE RITUAL miniatura.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">THE RITUAL</h5>
+                        <p class="card-text">Un grupo de amigos de la universidad organiza un viaje luego de la trágica
+                            muerte de uno de sus compañeros. Una presencia los atormentará al tomar un atajo para
+                            adentrarse en una parte misteriosa del bosque.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mb-1">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="./multimedia/GOODNIGHT MOMMY miniatura.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">GOODNIGHT MOMMY</h5>
+                        <p class="card-text">Dos gemelos que hacen todo juntos le dan la bienvenida a su mamá después de
+                            su cirugía reconstructiva. No obstante, los hermanos sospechan que hay algo extraño en su
+                            madre, algo perturbador y perverso. ¿Es su mamá esa mujer?
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mb-1">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="./multimedia/CREEP miniatura.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">CREEP</h5>
+                        <p class="card-text">Cuando un camarógrafo responde a un anuncio de Craigslist para un trabajo
+                            de un día en una ciudad alejada de la montaña , se encuentra con que su cliente no es en
+                            absoluto lo que inicialmente parece.
 
-        <div class="peliculas">
-            <div class="pelicula">
-                <div class="imagen"><img src="./multimedia/MIDSOMMAR miniatura.png" alt=""></div>
-                <div class="texto">
-                    <p>Dani tras una pérdida importante decide viajar con su novio y sus amigos a Suecia, a una comuna
-                        que
-                        vive
-                        en
-                        la naturaleza
-                        donde la festividad parece ser cotidiana pero la historia toma un giro macabro cuando ellos son
-                        invitados a
-                        participar
-                        en estas actividades.
-                    </p>
-                </div>
-
-            </div>
-            <div class="pelicula">
-                <div class="imagen"><img src="./multimedia/THE INVITATION miniatura.png" alt=""></div>
-                <div class="texto">
-                    <p>Will es invitado a una fiesta de su ex-esposa Eden la cual no ve hace mas de dos años debido a
-                        que estuvo de viaje por el mundo pero ahora tiene un nuevo marido y al parecer algo cambió en
-                        ella... es
-                        una persona diferente.
-                    </p>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mb-1">Ver más</button>
+                    </div>
                 </div>
             </div>
-            <div class="pelicula">
-                <div class="imagen"><img src="./multimedia/NIGHTCRAWLER miniatura.png" alt="">
-                </div>
-                <div class="texto">
-                    <p>Louis Bloom es un joven de Los Ángeles, sin empleo ni escrúpulos, quien, después de haber sido
-                        testigo
-                        de un accidente espeluznante, decide que quiere ganar fama y fortuna a través del periodismo
-                        sensacionalista.
-                    </p>
-                </div>
-            </div>
-            <div class="pelicula">
-                <div class="imagen"><img src="./multimedia/CREEP miniatura.png" alt=""></div>
-                <div class="texto">
-                    <p>Aaron responde a un anuncio en línea y se dirige a la casa de un extraño para filmarlo durante el
-                        día.
-                        El hombre quiere hacer una película por su hijo que está por nacer, pero sus peticiones se hacen
-                        más
-                        extrañas mientras el día avanza.
-                    </p>
-                </div>
-
-            </div>
-            <div class="pelicula">
-                <div class="imagen"><img src="./multimedia/THE RITUAL miniatura.png" alt=""></div>
-                <div class="texto">
-                    <p>Un grupo de amigos de la universidad organiza un viaje luego de la trágica muerte de uno de sus
-                        compañeros.
-                        Una presencia los atormentará al tomar un atajo para adentrarse en una parte misteriosa del
-                        bosque.
-                    </p>
+            <div class="col-xs-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="./multimedia/THE PRESTIGE miniatura.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">EL GRAN TRUCO</h5>
+                        <p class="card-text">Un encuentro durante una sesión fraudulenta provoca que dos magos del siglo
+                            XIX, Alfred Borden y Rupert Angier, se enfrenten en una intensa batalla por la supremacía.
+                            Las consecuencias son terribles cuando ambos intentan triunfar no sólo superando a su rival,
+                            sino destruyéndolo.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mb-1">Ver más</button>
+                    </div>
                 </div>
             </div>
-            <div class="pelicula">
-                <div class="imagen"><img src="./multimedia/GOODNIGHT MOMMY miniatura.png" alt="">
+            <div class="col-xs-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="./multimedia/DEVIL miniatura.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">LA REUNIÓN DEL DIABLO</h5>
+                        <p class="card-text">Cinco desconocidos se encuentran atrapados en un ascensor. Como el radio de
+                            comunicación está descompuesto, deberán ingeniárselas para poder salir de ahí.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mb-1">Ver más</button>
+                    </div>
                 </div>
-                <div class="texto">
-                    <p>Dos gemelos que hacen todo juntos le dan la bienvenida a su mamá después de su cirugía
-                        reconstructiva.
-                        No obstante, los hermanos sospechan que hay algo extraño en su madre, algo perturbador y
-                        perverso.
-                        ¿Es su mamá esa mujer?
-                    </p>
+            </div>
+            <div class="col-xs-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="./multimedia/DEBORAH LOGAN miniatura.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">LA POSESIÓN DE DEBORAH LOGAN</h5>
+                        <p class="card-text">Mia está haciendo un documental sobre el Alzheimer grabando la vida
+                            cotidiana de Deborah, una señora afectada, y de Sarah, su hija. Sin embargo, poco a poco
+                            algo extraño y demoníaco se va adueñando del cuerpo de Deborah, poseyéndola. La cámara de
+                            Mia será testigo de la irrupción del terror más horrendo.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mb-1">Ver más</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-        <footer class="footer">
-            <div><a class="txtfooter" href="https://www.youtube.com/channel/UC3i1-2P39a-elgLO2YFJ3Tg">YOUTUBE</a></div>
-            <div>INSTAGRAM</div>
-            <div>TWITTER</div>
-        </footer>
     </div>
+    
+    <div class="footer">
+        <div class="row">
+            <div class="col text-center"><a href="">TWITTER</a></div>
+            <div class="col text-center"><a href="">YOUTUBE</a></div>
+            <div class="col text-center"><a href="">INSTAGRAM</a></div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
