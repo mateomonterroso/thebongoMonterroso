@@ -10,96 +10,165 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png">
     <title>Historial</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Tu mejor página de resúmenes de películas. En The Bongo vas a encontrar tus películas favoritas resumidas 
+        en unos pocos minutos y siempre con un poco de humor.">
+    <meta name="keywords" content="peliculas, resumen de peliculas, peliculas resumidas, movies, peliculas de terror, peliculas de accion, peliculas buenas para ver">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <img class="fotologo" src="../multimedia/bongo png.png" alt="">
-            <h1 class="animate__animated animate__fadeInDown" class="titulo">THE BONGO </h1>
+    <nav class="navbar navbar-expand-lg navbar-light header">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand text-xl-left">
+                <span class="mb-0 h1 titulo">
+                    <img src="../multimedia/bongo png.png" class="align-top" alt="" width="50">
+                    THE BONGO</span>
+            </a>
+            <button style="color: white !important;" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-white" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> Géneros
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Terror</a>
+                            <a class="dropdown-item" href="#">Acción</a>
+                            <a class="dropdown-item" href="#">Thriller</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../paginas/videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../paginas/peliculas.html">Futuro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../paginas/historial.html">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../paginas/contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-        <div class="navegador">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./videos.html">VIDEOS</a></li>
-                <li><a href="./peliculas.html">FUTURO</a></li>
-                <li><a class="activo" href="./historial.html">HISTORIAL</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </div>
-    </div>
+    </nav>
     <br>
-    <div class="tabla">
-    <table>
+
+    <table class="table">
         <thead>
             <tr>
-                <th>Videos</th>
-                <th>Fecha de publicación</th>
-                <th>Cantidad de visitas</th>
-                <th>Cantidad de Me Gusta</th>
+                <th scope="col">#</th>
+                <th scope="col">Videos</th>
+                <th scope="col">Fecha de subida</th>
+                <th scope="col">Visitas</th>
+                <th scope="col">Me Gusta</th>
             </tr>
-
-
         </thead>
         <tbody>
             <tr>
-                <th>The Ritual</th>
-                <th>21/04/2021</th>
-                <th>1.284</th>
-                <th>193</th>
+                <th scope="row">1</th>
+                <td>THE RITUAL</td>
+                <td>21/04/2021</td>
+                <td>1601</td>
+                <td>220</td>
             </tr>
             <tr>
-                <th>Creep</th>
-                <th>14/04/2021</th>
-                <th>578</th>
-                <th>78</th>
+                <th scope="row">2</th>
+                <td>DEVIL</td>
+                <td>11/03/2021</td>
+                <td>907</td>
+                <td>75</td>
             </tr>
             <tr>
-                <th>Devil</th>
-                <th>11/03/2021</th>
-                <th>529</th>
-                <th>54</th>
+                <th scope="row">3</th>
+                <td>La Posesión De DEBORAH LOGAN</td>
+                <td>14/05/2021</td>
+                <td>831</td>
+                <td>107</td>
             </tr>
             <tr>
-                <th>Midsommar</th>
-                <th>20/05/2021</th>
-                <th>504</th>
-                <th>99</th>
+                <th scope="row">4</th>
+                <td>MIDSOMMAR</td>
+                <td>20/05/2021</td>
+                <td>808</td>
+                <td>127</td>
             </tr>
             <tr>
-                <th>The Invitation</th>
-                <th>07/05/2021</th>
-                <th>438</th>
-                <th>82</th>
+                <th scope="row">5</th>
+                <td>CREEP</td>
+                <td>14/04/2021</td>
+                <td>771</td>
+                <td>92</td>
             </tr>
             <tr>
-                <th>Goodnight Mommy</th>
-                <th>27/04/2021</th>
-                <th>425</th>
-                <th>74</th>
+                <th scope="row">6</th>
+                <td>LA INVITACIÓN</td>
+                <td>07/05/2021</td>
+                <td>762</td>
+                <td>107</td>
             </tr>
             <tr>
-                <th>Host</th>
-                <th>22/02/2021</th>
-                <th>420</th>
-                <th>55</th>
+                <th scope="row">7</th>
+                <td>NIGHTCRAWLER</td>
+                <td>03/06/2021</td>
+                <td>612</td>
+                <td>97</td>
             </tr>
             <tr>
-                <th>Godzilla</th>
-                <th>10/02/2021</th>
-                <th>289</th>
-                <th>40</th>
+                <th scope="row">8</th>
+                <td>GOODNIGHT MOMMY</td>
+                <td>27/04/2021</td>
+                <td>604</td>
+                <td>90</td>
             </tr>
-
+            <tr>
+                <th scope="row">9</th>
+                <td>HOST</td>
+                <td>22/02/2021</td>
+                <td>598</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td>GODZILLA</td>
+                <td>10/02/2021</td>
+                <td>342</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td>THE PRESTIGE</td>
+                <td>04/07/2021</td>
+                <td>138</td>
+                <td>29</td>
+            </tr>
         </tbody>
-
-
-
     </table>
-</div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
+
 
 </html>

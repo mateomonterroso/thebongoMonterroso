@@ -10,63 +10,119 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Tu mejor página de resúmenes de películas. En The Bongo vas a encontrar tus películas favoritas resumidas 
+        en unos pocos minutos y siempre con un poco de humor.">
+    <meta name="keywords" content="peliculas, resumen de peliculas, peliculas resumidas, movies, peliculas de terror, peliculas de accion, peliculas buenas para ver">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <img class="fotologo" src="../multimedia/bongo png.png" alt="">
-            <h1 class="animate__animated animate__fadeInDown" class="titulo">THE BONGO </h1>
+    <nav class="navbar navbar-expand-lg navbar-light header">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand text-xl-left">
+                <span class="mb-0 h1 titulo">
+                    <img src="../multimedia/bongo png.png" class="align-top" alt="" width="50">
+                    THE BONGO</span>
+            </a>
+            <button style="color: white !important;" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-white" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> Géneros
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Terror</a>
+                            <a class="dropdown-item" href="#">Acción</a>
+                            <a class="dropdown-item" href="#">Thriller</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../paginas/videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../paginas/peliculas.html">Futuro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../paginas/historial.html">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../paginas/contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-        <div class="navegador">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./videos.html">VIDEOS</a></li>
-                <li><a href="./peliculas.html">FUTURO</a></li>
-                <li><a href="./historial.html">HISTORIAL</a></li>
-                <li><a class="activo" href="./contacto.html">CONTACTO</a></li>
-            </ul>
+    </nav>
+
+    <div class="container"><div class="row">
+        <div class="col text-center">
+            <h3 class="ml-3">FORMULARIO DE CONTACTO</h3>
         </div>
-    </div>
-    <br>
-    <div class="formulario">
+    </div></div>
     <form action="">
-        <fieldset>
-            <legend>FORMULARIO DE CONTACTO</legend>
-            <label for="nombre">Nombre:</label>
-            <input placeholder="Escribe tu nombre" name="nombre" type="text">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-xs-12 col-md-4 mb-3">
+                    <label for="exampleInputPassword1">Nombre:</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                        placeholder="Escribe tu nombre">
+                </div>
+            </div>
+            <div class="form-group col-md-4 mb-3 ml-2">
+                <label for="exampleInputPassword1">Apellido:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1"
+                    placeholder="Escribe tu apellido">
+            </div>
+            <div class="form-group col-md-4 mb-3 ml-2">
+                <label for="exampleInputEmail1">Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Escribe tu email">
+                <small id="emailHelp" class="form-text text-muted">No compartiremos tu mail con nadie.</small>
+            </div>
+            <div class="form-group">
+                <label for="genero">Género</label>
+                <select name="genero">
+                    <option value="">Masculino</option>
+                    <option value="">Femenino</option>
+                    <option value="">Otro</option>
+                </select>
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input ml-3" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">¿Desea recibir notificaciones cuando haya nuevo
+                    contenido? </label>
+            </div>
+            <textarea name="comentarios" id="" cols="30" rows="10" class="col-md-4 mb-3 ml-3"
+                placeholder="Dejanos tu comentario"></textarea>
             <br>
-            <label for="apellido">Apellido:</label>
-            <input placeholder="Escribe tu apellido" name="apellido" type="text">
-            <br>
-            <label for="mail">Email:</label>
-            <input placeholder="Escribe tu email" name="mail" type="text">
-            <br>
-            <label for="genero">Género</label>
-            <select name="genero">
-                <option value="">Masculino</option>
-                <option value="">Femenino</option>
-                <option value="">Otro</option>
-            </select>
-            <br>
-            <label for="notificaciones">¿Desea recibir notificaciones cuando haya nuevo contenido?</label>
-            <input type="checkbox" name="notificaciones">
-            <br>
-            <br>
-            <label for="comentarios">Comentarios</label>
-            <br>
-            <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" value="ENVIAR">
-            <input type="reset" value="REINICIAR FORMULARIO">
-
-
-        </fieldset>
-
+            <button type="submit" class="btn btn-primary m-3">Enviar</button>
+            <button type="reset" class="btn btn-primary">Reiniciar formulario</button>
+        </div>
+        </div>
     </form>
-</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

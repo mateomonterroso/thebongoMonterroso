@@ -1,0 +1,16 @@
+.header {
+  background-color: #b41d23; }
+  .header .nav-item a:hover {
+    color: #c2c2c2 !important; }
+
+.container .card:hover {
+  transform: scale(1.05); }
+
+.footer {
+  background-color: #0c0b0b;
+  padding: 25px; }
+  .footer a {
+    text-decoration: none;
+    color: white !important; }
+    .footer a:hover {
+      color: #b41d23 !important; }
