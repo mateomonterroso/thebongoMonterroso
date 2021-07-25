@@ -35,3 +35,41 @@ $color-primario:#b41d23;
     }
 }
 
+//MIXIN
+
+@mixin mensaje($colorTexto, $colorFondo, $tamanioTexto, $anchoMensaje) {
+    color: $colorTexto;
+    background-color: $colorFondo;
+    font-size: $tamanioTexto;
+    width: $anchoMensaje;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid white;
+}
+
+#mensajeUsuario{
+    @include mensaje($color-primario, white, 20px, 100%)
+
+}
+
+//EXTEND
+
+.mensajeRecomendado{
+    color: $color-primario;
+    background-color: white;
+    font-size: 20px;
+    width: 100%;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid white;
+}
+
+.mensajeContacto{
+    @extend .mensajeRecomendado;
+    font-weight: bold;
+
+}
